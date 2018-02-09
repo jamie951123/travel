@@ -11,4 +11,21 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+  <ion-item>
+      <ion-label color="primary" floating>Floating Label</ion-label>
+      <ion-input [(ngModel)]="data"></ion-input>
+    </ion-item>
+  <ion-item>
+   <button ion-button (click)="copy()">Copy</button>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="paste()">Paste</button>
+   </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Paste</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
 </ion-content>
